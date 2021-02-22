@@ -1,0 +1,1 @@
+/usr/bin/c++  -Wall -Werror -Wextra -Wno-unused-parameter -fPIC -fno-omit-frame-pointer -g3 -g CMakeFiles/sparrow.dir/main.cpp.o CMakeFiles/sparrow.dir/webserver/webserver.cpp.o CMakeFiles/sparrow.dir/webserver/threadpool.cpp.o CMakeFiles/sparrow.dir/webserver/sync.cpp.o CMakeFiles/sparrow.dir/util/config_parser.cpp.o -o sparrow  -lpthread 

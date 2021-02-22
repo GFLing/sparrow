@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/absurd/dev/net/sparrow/src/main.cpp
+iostream
+-
+util/config_parser.h
+/home/absurd/dev/net/sparrow/src/util/config_parser.h
+webserver/webserver.h
+/home/absurd/dev/net/sparrow/src/webserver/webserver.h
+
+/home/absurd/dev/net/sparrow/src/util/config_parser.h
+stdint.h
+-
+
+/home/absurd/dev/net/sparrow/src/webserver/webserver.h
+

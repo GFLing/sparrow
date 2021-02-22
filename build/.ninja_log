@@ -1,0 +1,7 @@
+# ninja log v5
+0	14	1613983815	src/CMakeFiles/sparrow.dir/webserver/threadpool.cpp.o	9bd441468f7c9977
+0	16	1613983815	src/CMakeFiles/sparrow.dir/webserver/sync.cpp.o	bcec629a2e77763c
+0	25	1613983815	src/CMakeFiles/sparrow.dir/webserver/webserver.cpp.o	b78d4b84cc431214
+0	47	1613983815	src/CMakeFiles/sparrow.dir/util/config_parser.cpp.o	ed7533a450c28b65
+0	298	1613983816	src/CMakeFiles/sparrow.dir/main.cpp.o	7c62cf571c794e7
+298	371	1613983816	src/sparrow	55ef36d118daa5a9
