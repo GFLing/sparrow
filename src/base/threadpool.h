@@ -14,13 +14,6 @@ private:
     /* data */
 };
 
-TheradPool::TheradPool(/* args */)
-{
-}
-
-TheradPool::~TheradPool()
-{
-}
 
 }  // namespace sparrow
 

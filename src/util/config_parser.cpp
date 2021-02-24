@@ -1,9 +1,25 @@
 #include "util/config_parser.h"
 
+#include <stdio.h>
 #include <stdlib.h>
 #include <sys/unistd.h>
 
 namespace sparrow {
+
+namespace {
+    void ShowUsageAndExit(const char* name, int exit_code) {
+        printf("A tiny reactor web server under Linux.\n");
+        printf("Usage: %s [OPTION]\n", name);
+        printf("Options:\n");
+        printf("  -p, port.\n");
+        printf("  -l, listen fd trigger mode, 0 for ET(default), 1 for LT.\n");
+        printf("  -c, connection fd trigger mode, 0 for ET(default), 1 for LT.\n");
+        printf("  -s, sql connection number.\n");
+        printf("  -t, thread number.\n");
+        printf("  -a, actor mode, 0 for Reactor(default), 1 for Proactor.\n");
+        exit(exit_code);
+    }
+}
 
 // 默认值
 ConfigParser::ConfigParser() {
@@ -21,6 +37,9 @@ void ConfigParser::Parse(int argc, char* argv[]) {
     char opt;
     const char* str = "p:l:c:s:t:a:";
     while((opt = getopt(argc, argv, str)) != -1) {
+        if(optarg == nullptr) {
+            ShowUsageAndExit(argv[0], 1);
+        }
         int res = atoi(optarg);
         switch (opt) {
         case 'p':
@@ -48,6 +67,7 @@ void ConfigParser::Parse(int argc, char* argv[]) {
             break;
 
         default:
+            
             break;
         }
     }

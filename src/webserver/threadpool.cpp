@@ -1,5 +1,0 @@
-
-namespace sparrow {
-
-
-}  // namespace sparrow
