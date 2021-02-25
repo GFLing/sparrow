@@ -1,6 +1,0 @@
-/home/absurd/dev/net/sparrow/build/CMakeFiles/rebuild_cache.dir
-/home/absurd/dev/net/sparrow/build/CMakeFiles/edit_cache.dir
-/home/absurd/dev/net/sparrow/build/src/CMakeFiles/rebuild_cache.dir
-/home/absurd/dev/net/sparrow/build/src/CMakeFiles/edit_cache.dir
-/home/absurd/dev/net/sparrow/build/src/CMakeFiles/unittest.dir
-/home/absurd/dev/net/sparrow/build/src/CMakeFiles/sparrow.dir
