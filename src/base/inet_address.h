@@ -22,8 +22,12 @@ public:
 
     ~InetAddress(){};
 
+    // 设置 sockaddr, ipv4 和 ipv6会被同时设置
+    void SetSockAddr(const struct sockaddr_in6& addr) { addr6_ = addr; }
+
     // 获得 sockaddr
     const struct sockaddr* GetSockAddr() const { return reinterpret_cast<const struct sockaddr*>(&addr6_) ;}
+
     // 获得 sa_family_t
     sa_family_t GetFamily() const { return addr6_.sin6_family; }
 

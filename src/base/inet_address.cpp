@@ -39,7 +39,7 @@ InetAddress::InetAddress(std::string ip, uint16_t port, bool ipv6) {
 
 // 网络字节序的二进制转换成点分十进制
 std::string InetAddress::GetIP() const {
-    char buf[32] = "";
+    char buf[47] = "";  // unp p71, 介绍了这个缓冲区至少为多大
     if(addr_.sin_family == AF_INET) {
         ::inet_ntop(AF_INET, &addr_.sin_addr, buf, sizeof buf);
     }
